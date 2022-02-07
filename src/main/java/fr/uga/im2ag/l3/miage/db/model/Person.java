@@ -2,6 +2,9 @@ package fr.uga.im2ag.l3.miage.db.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 public abstract class Person {
 
     private Long id;

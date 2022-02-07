@@ -1,5 +1,8 @@
 package fr.uga.im2ag.l3.miage.db.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
 public class Grade {
 

@@ -1,3 +1,4 @@
+
 package fr.uga.im2ag.l3.miage.db.repository.impl;
 
 import fr.uga.im2ag.l3.miage.db.repository.api.StudentRepository;
@@ -33,6 +34,7 @@ public class StudentRepositoryImpl extends BaseRepositoryImpl implements Student
     @Override
     public Student findById(Long id) {
         // TODO
+
         return null;
     }
 
