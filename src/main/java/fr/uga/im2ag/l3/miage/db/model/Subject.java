@@ -10,9 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
-@NamedQuery(name="subject_by_id",
+/*@NamedQuery(name="subject_by_id",
             query="select s from Subject s where s.id = :id")
-
+*/
+@NamedQuery(name="teacher", 
+            query = "select s........")
 @Entity
 public class Subject {
 

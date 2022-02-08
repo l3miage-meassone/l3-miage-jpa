@@ -33,15 +33,20 @@ public class StudentRepositoryImpl extends BaseRepositoryImpl implements Student
 
     @Override
     public Student findById(Long id) {
-        // TODO
+        String jql = "select s from student s where s.id = :id";
+        Student retour = entityManager.createQuery(jql, Student.class)
+                            .setParameter("id", id)
+                            .getSingleResult();
 
-        return null;
+        return retour;
     }
 
     @Override
     public List<Student> getAll() {
-        // TODO
-        return null;
+        String jql = "select s from Student s";
+        List<Student> retour = (List<Student>) entityManager.createQuery(jql, Student.class)
+                                                .getResultList();
+        return retour;
     }
 
     @Override

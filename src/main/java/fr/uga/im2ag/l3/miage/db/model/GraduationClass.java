@@ -5,14 +5,20 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
+@NamedQuery(name = "findByYearAndName",
+            query = "select  g from GraduationClass g where g.year = :year and g.name = :name")
+@Entity
 public class GraduationClass {
 
+    @Id
     private Long id;
     private String name;
     private Integer year;
+    @OneToMany
     private List<Student> students;
 
     public Long getId() {
