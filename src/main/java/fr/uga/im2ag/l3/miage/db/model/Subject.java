@@ -13,8 +13,9 @@ import javax.persistence.NamedQuery;
 /*@NamedQuery(name="subject_by_id",
             query="select s from Subject s where s.id = :id")
 */
-@NamedQuery(name="teacher", 
-            query = "select s........")
+@NamedQuery(name="findTeachers",
+            query="select t from Teacher t join t.teaching where s.id = :id)")
+
 @Entity
 public class Subject {
 
