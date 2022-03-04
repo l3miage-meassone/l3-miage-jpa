@@ -5,6 +5,7 @@ import fr.uga.im2ag.l3.miage.db.model.Grade;
 import fr.uga.im2ag.l3.miage.db.model.Subject;
 
 import javax.persistence.EntityManager;
+import javax.persistence.*;
 import java.util.List;
 
 public class GradeRepositoryImpl extends BaseRepositoryImpl implements GradeRepository {
@@ -55,7 +56,7 @@ public class GradeRepositoryImpl extends BaseRepositoryImpl implements GradeRepo
     @Override
     public List<Grade> getAll() {
         // TODO
-        List<Grade> retour = entityManager.createNamedQuery("getall", Grade.class)
+        List<Grade> retour = entityManager.createNamedQuery("getallgrade", Grade.class)
                                             .getResultList();
         return retour;
     }

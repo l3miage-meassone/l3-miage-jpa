@@ -6,11 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 import org.hibernate.annotations.ManyToAny;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
-
+@NamedQuery(name="getall",
+            query="select g from Grade g")
 @Entity
 public class Teacher extends Person {
 

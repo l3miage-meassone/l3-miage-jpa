@@ -5,6 +5,7 @@ import fr.uga.im2ag.l3.miage.db.model.GraduationClass;
 
 import javax.persistence.EntityManager;
 import java.util.List;
+import javax.persistence.*;
 
 public class GraduationClassRepositoryImpl extends BaseRepositoryImpl implements GraduationClassRepository {
 

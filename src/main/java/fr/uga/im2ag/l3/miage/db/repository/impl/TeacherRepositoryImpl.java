@@ -5,6 +5,7 @@ import fr.uga.im2ag.l3.miage.db.model.Teacher;
 
 import javax.persistence.EntityManager;
 import java.util.List;
+import javax.persistence.*;
 
 public class TeacherRepositoryImpl extends BaseRepositoryImpl implements TeacherRepository {
 
@@ -21,6 +22,7 @@ public class TeacherRepositoryImpl extends BaseRepositoryImpl implements Teacher
     @Override
     public Teacher findHeadingGraduationClassByYearAndName(Integer year, String name) {
         // TODO
+        //pas compris
         return null;
     }
 
@@ -43,8 +45,7 @@ public class TeacherRepositoryImpl extends BaseRepositoryImpl implements Teacher
 
     @Override
     public List<Teacher> getAll() {
-        String jql = "select s from teacher s";
-        List<Teacher> retour = (List<Teacher>) entityManager.createQuery(jql, Teacher.class)
+        List<Teacher> retour = (List<Teacher>) entityManager.createNamedQuery("getall", Teacher.class)
                                                 .getResultList();
         return retour;
     }

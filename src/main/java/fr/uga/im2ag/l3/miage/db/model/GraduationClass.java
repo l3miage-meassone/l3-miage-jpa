@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
 @NamedQuery(name = "findByYearAndName",

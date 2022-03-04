@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
 /*@NamedQuery(name="subject_by_id",

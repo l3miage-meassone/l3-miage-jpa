@@ -4,9 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 // TODO ajouter une named query pour une des requêtes à faire dans le repository
-@NamedQuery(name="getall",
+@NamedQuery(name="getallgrade",
             query="select g from Grade g")
 @Entity
 public class Grade {

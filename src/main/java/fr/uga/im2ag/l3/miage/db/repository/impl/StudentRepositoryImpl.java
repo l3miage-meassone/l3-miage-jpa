@@ -6,6 +6,7 @@ import fr.uga.im2ag.l3.miage.db.model.Student;
 
 import javax.persistence.EntityManager;
 import java.util.List;
+import javax.persistence.*;
 
 public class StudentRepositoryImpl extends BaseRepositoryImpl implements StudentRepository {
 
